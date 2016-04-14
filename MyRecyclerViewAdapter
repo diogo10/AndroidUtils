@@ -1,0 +1,101 @@
+
+import android.support.v7.widget.*;
+import android.view.*;
+import android.widget.*;
+
+import java.util.*;
+
+import ie.ienquire.bigflixdemoandroid.*;
+import ie.ienquire.bigflixdemoandroid.model.*;
+
+/**
+ * Created by diogo on 13/04/16.
+ */
+public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MovieViewHolder> {
+
+    private List<Movie> list;
+    private static ClickListener clickListener;
+
+
+    public MovieAdapter(List<Movie> list) {
+        this.list = list;
+    }
+
+    /**
+     * As its name suggests, this method is called when the custom ViewHolder needs to be initialized.
+     * We specify the layout that each item of the RecyclerView should use. This is done by inflating the layout using LayoutInflater,
+     * passing the output to the constructor of the custom ViewHolder.
+     *
+     * @param parent
+     * @param viewType
+     * @return
+     */
+    @Override
+    public MovieViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_movies_item,parent,false);
+        return new MovieViewHolder(v);
+    }
+
+    /**
+     * Override the onBindViewHolder to specify the contents of each item of the RecyclerView.
+     * This method is very similar to the getView method of a ListView's adapter.
+     *
+     * @param holder
+     * @param position
+     */
+    @Override
+    public void onBindViewHolder(MovieViewHolder holder, int position) {
+        holder.tv_title.setText(list.get(position).getName());
+        holder.img_movie.setImageResource(list.get(position).getUrl_banner());
+    }
+
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+    }
+
+
+
+
+
+    /**
+     * My Holder
+     */
+    public static class MovieViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        TextView tv_title;
+        ImageView img_movie;
+
+        MovieViewHolder(View itemView) {
+            super(itemView);
+            itemView.setOnClickListener(this);
+            tv_title = (TextView)itemView.findViewById(R.id.tv_title);
+            img_movie = (ImageView)itemView.findViewById(R.id.img_movie);
+        }
+
+
+        @Override
+        public void onClick(View v) {
+            clickListener.onItemClick(getAdapterPosition(),v);
+        }
+
+
+    }
+
+
+
+
+    public void setOnItemClickListener(ClickListener clickListener) {
+        MovieAdapter.clickListener = clickListener;
+    }
+
+    public interface ClickListener {
+        void onItemClick(int position, View v);
+        void onItemLongClick(int position, View v);
+    }
+
+}
