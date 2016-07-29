@@ -1,10 +1,9 @@
-package ie.ienquire.fff.dreamteam.util;
+package myapp.util;
 
 import android.app.Application;
 
 /**
- * Created by barry on 29/07/2016.
- * DreamTeam
+ * Created by Diogo on 29/07/2016.
  */
 public class MyApp extends Application {
 
