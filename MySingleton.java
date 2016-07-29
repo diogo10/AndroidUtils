@@ -1,4 +1,4 @@
-package ie.ienquire.fff.dreamteam.util;
+package myapp.util;
 
 
 import android.view.View;
@@ -8,7 +8,6 @@ import android.widget.Toast;
 
 /**
  * Created by Diogo on 29/07/2016.
- * DreamTeam
  */
 public class MySingleton {
 
