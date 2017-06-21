@@ -11,3 +11,9 @@ https://github.com/futurice/android-best-practices
 **Google Play Services**
 
 https://developers.google.com/android/guides/setup
+
+**Keyboard Shortcuts**
+
+https://www.jetbrains.com/help/idea/intellij-idea-pro-tips.html
+https://gautam.io/work/android_studio_shortcuts/
+
