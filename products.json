@@ -7,7 +7,7 @@
     "id": "5968dd23fsdsds00001",
     "name": "White Bread",
     "category": "Bread",
-    "price": "9.47"
+    "price": "3.50"
 }, {
     "id": "596222dd23fc13ae04d9000001",
     "name": "Green Bread",
@@ -30,4 +30,10 @@
     "name": "Baby Bronie",
     "category": "Sweet",
     "price": "2.47"
+},
+{
+    "id": "029309238923222sd",
+    "name": "Pie Cake",
+    "category": "Sweet",
+    "price": "3.50"
 }]
