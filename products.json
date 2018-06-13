@@ -1,0 +1,27 @@
+[{
+    "id": "5968dd23fc13ae04d9000001",
+    "name": "Brown Bread",
+    "category": "Bread",
+    "price": "10.47"
+}, {
+    "id": "5968dd23fsdsds00001",
+    "name": "White Bread",
+    "category": "Bread",
+    "price": "9.47"
+}, {
+    "id": "596222dd23fc13ae04d9000001",
+    "name": "Green Bread",
+    "category": "Bread",
+    "price": "7.47"
+}, {
+    "id": "596222dd23fc13ae04d9000001",
+    "name": "Sugar Bread",
+    "category": "Bread",
+    "price": "7.47"
+},
+{
+    "id": "5962kjdsjdswwww001",
+    "name": "Jeely beer",
+    "category": "Beer",
+    "price": "2.47"
+}]
