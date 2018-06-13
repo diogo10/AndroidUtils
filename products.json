@@ -2,7 +2,7 @@
     "id": "5968dd23fc13ae04d9000001",
     "name": "Brown Bread",
     "category": "Bread",
-    "price": "10.47"
+    "price": "4.47"
 }, {
     "id": "5968dd23fsdsds00001",
     "name": "White Bread",
@@ -23,5 +23,11 @@
     "id": "5962kjdsjdswwww001",
     "name": "Jeely beer",
     "category": "Beer",
+    "price": "2.47"
+},
+{
+    "id": "02930293203dsdsd",
+    "name": "Baby Bronie",
+    "category": "Sweet",
     "price": "2.47"
 }]
