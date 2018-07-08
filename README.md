@@ -17,3 +17,8 @@ https://developers.google.com/android/guides/setup
 https://www.jetbrains.com/help/idea/intellij-idea-pro-tips.html
 https://gautam.io/work/android_studio_shortcuts/
 
+**Room**
+
+https://medium.com/google-developers/7-pro-tips-for-room-fbadea4bfbd1
+
+
