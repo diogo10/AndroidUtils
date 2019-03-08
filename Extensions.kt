@@ -1,5 +1,3 @@
-package pt.edp.redy.utils.extensions
-
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
 import android.app.Activity
@@ -37,10 +35,6 @@ import com.google.gson.reflect.TypeToken
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
-import pt.edp.redy.R
-import pt.edp.redy.domain.model.neighbours.RedyNeighbours
-import pt.edp.redy.view.utils.RedyLocate
-import pt.edp.redy.view.utils.RedyVideoPlayerActivity
 import java.io.File
 import java.io.FileOutputStream
 import java.util.*
